@@ -35,6 +35,7 @@ brew install python3
 
 # install go
 brew install go
+go get -u jrubin.io/zb
 
 # install neovim
 brew install neovim
@@ -45,8 +46,12 @@ pip3 install neovim
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
+#install onedark
+curl -fLo ~/.local/share/nvim/site/autoload/onedark.vim --create-dirs \
+    https://raw.githubusercontent.com/joshdick/onedark.vim/master/autoload/onedark.vim
+
 # install Plugins
-nvim +PlugInstall
+nvim +PlugInstall +GoInstallBinaries
 
 cd ~/.config
 git clone https://github.com/sbogacz/dotconfig.git nvim
