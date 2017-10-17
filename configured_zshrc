@@ -59,6 +59,7 @@ source $ZSH/oh-my-zsh.sh
 export DEFAULT_USER=sbogacz
 export GOPATH=$HOME/code/go
 
+export PATH=$PATH:$HOME/code/go/bin
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
