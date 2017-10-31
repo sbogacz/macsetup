@@ -53,6 +53,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/onedark.vim --create-dirs \
 # install Plugins
 nvim +PlugInstall +GoInstallBinaries
 
+mkdir ~/.config
 cd ~/.config
 git clone https://github.com/sbogacz/dotconfig.git nvim
 
